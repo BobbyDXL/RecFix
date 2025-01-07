@@ -1,0 +1,17 @@
+{
+  "name": "youtube-recommendations",
+  "version": "1.0.0",
+  "description": "YouTube recommendations system",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && node src/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "express-fileupload": "^1.5.1"
+  }
+}
